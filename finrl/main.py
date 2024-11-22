@@ -64,11 +64,13 @@ def main() -> int:
         # demo for elegantrl
         kwargs = (
             {}
+        TICKER=["AAPL"] #juste pour un exemple
+        #DOW_30_TICKER
         )  # in current meta, with respect yahoofinance, kwargs is {}. For other data sources, such as joinquant, kwargs is not empty
         train(
             start_date=TRAIN_START_DATE,
             end_date=TRAIN_END_DATE,
-            ticker_list=DOW_30_TICKER,
+            ticker_list=TICKER,
             data_source="yahoofinance",
             time_interval="1D",
             technical_indicator_list=INDICATORS,
