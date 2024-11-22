@@ -98,7 +98,7 @@ class YahooFinanceProcessor:
         end_date = pd.Timestamp(end_date)
         delta = timedelta(days=1)
         data_df = pd.DataFrame()
-        print(ticker_list)
+        print('Voici la liste',ticker_list)
         for tic in ticker_list:
             current_tic_start_date = start_date
             while (
